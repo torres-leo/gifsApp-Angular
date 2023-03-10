@@ -12,4 +12,8 @@ export class SidebarComponent {
   get record(): string[] {
     return this.gifsService.record;
   }
+
+  search(value: string) {
+    return this.gifsService.search(value);
+  }
 }

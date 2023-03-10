@@ -1,1 +1,21 @@
-<p>results works!</p>
+<!-- <ul>
+  <li *ngFor="let gif of results">{{ gif.title }}</li>
+</ul> -->
+<div class="row">
+  <div
+    class="col-md-4 col-sm-6 animate__animated animate__fadeIn animate_faster mb-4"
+    *ngFor="let gif of results"
+  >
+    <div class="card">
+      <img
+        [src]="gif.images.downsized_medium.url"
+        [alt]="'image' + gif.title"
+        class="card-img-top"
+        height="300"
+      />
+      <div class="card-body">
+        <p class="card-text">{{ gif.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>

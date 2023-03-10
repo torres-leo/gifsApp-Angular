@@ -6,7 +6,7 @@
   <div class="list-group list-reset mt-3">
     <a
       *ngFor="let item of record"
-      href="#"
+      (click)="search(item)"
       class="list-group-item list-group-item-action"
       >{{ item | titlecase }}</a
     >
